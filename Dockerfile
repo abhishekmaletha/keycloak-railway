@@ -7,5 +7,5 @@ EXPOSE 8080
 # Use the development mode start command
 # If Railway assigns a dynamic port via the PORT variable, you can adjust accordingly:
 # CMD ["start-dev", "--http-port=${PORT}"]
-CMD ["start-dev", "--http-port=${PORT}", "-J-Xms256m", "-J-Xmx256m"]
+CMD ["start-dev"]
 
