@@ -13,10 +13,6 @@ ENV KC_DB_URL_PORT=5432
 ENV KC_DB_URL_DATABASE=KeycloakDB
 ENV KC_DB_URL_PARAMETERS=sslmode=require
 
-# PostgreSQL credentials (supply via secrets or deployment-time configuration in production)
-ENV KC_DB_USERNAME=MovorAadmin
-ENV KC_DB_PASSWORD=M0v0r@Admin
-
 # Expose Keycloak's default HTTP port
 EXPOSE 8080
 
