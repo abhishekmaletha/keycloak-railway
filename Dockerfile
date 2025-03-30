@@ -1,11 +1,12 @@
-# Use the official Keycloak image from quay.io
 FROM quay.io/keycloak/keycloak:24.0.4
 
-# Expose the default Keycloak port
+# Non-sensitive settings (optional)
+ENV KC_DB=postgres              # Tell Keycloak to use PostgreSQL
+ENV KC_PROXY=edge               # Required for Render's HTTPS
+ENV KC_HTTP_ENABLED=true        # Enable HTTP (Render handles HTTPS)
+
+# Expose port 8080 (Keycloak's default)
 EXPOSE 8080
 
-# Use the development mode start command
-# If Railway assigns a dynamic port via the PORT variable, you can adjust accordingly:
-# CMD ["start-dev", "--http-port=${PORT}"]
-CMD ["start-dev"]
-
+# Start in production mode
+CMD ["start", "--optimized"]
