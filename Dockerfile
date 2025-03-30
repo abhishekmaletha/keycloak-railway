@@ -6,6 +6,7 @@ ENV KC_DB=postgres
 ENV KC_PROXY=edge              
 ENV KC_HTTP_ENABLED=true        
 
+ENV KC_DB_URL_PROPERTIES=?sslmode=require
 # Expose port 8080 (Keycloak's default)
 EXPOSE 8080
 
