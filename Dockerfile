@@ -8,7 +8,7 @@ ENV KC_PROXY=edge
 ENV KC_HTTP_ENABLED=true
 
 # PostgreSQL connection configuration
-ENV KC_DB_URL_HOST=ep-mute-snowflake-a5ov2o85-pooler.us-east-2.aws.neon.tech
+ENV KC_DB_URL_HOST=ep-aged-fog-a1nmmmf3-pooler.ap-southeast-1.aws.neon.tech
 ENV KC_DB_URL_PORT=5432
 ENV KC_DB_URL_DATABASE=KeycloakDB
 ENV KC_DB_URL_PARAMETERS=sslmode=require
